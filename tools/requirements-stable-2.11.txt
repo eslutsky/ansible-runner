@@ -11,3 +11,4 @@ pyyaml
 six
 ovirt-engine-sdk-python
 netaddr
+cryptography>=3.2
