@@ -70,5 +70,6 @@ ENV HOME=/home/runner
 ADD utils/entrypoint.sh /bin/entrypoint
 RUN chmod +x /bin/entrypoint
 
+RUN ansible-galaxy install monolithprojects.github_actions_runner
 ENTRYPOINT ["entrypoint"]
 CMD ["ansible-runner", "run", "/runner"]
